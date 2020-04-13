@@ -30,9 +30,9 @@ class App extends Component {
           <Switch>
 
             <Route path="/signin" exact render={() => !loggedIn ? <SignIn logg={this.logOrNot.bind(this)} /> :
-              <Redirect to="/dashboard" />} />
+              <Redirect to="/" />} />
 
-            <Route path="/dashboard" exact render={() => loggedIn ? <DashBoard /> : <Redirect to='/signin' />} />
+            <Route path="/" exact render={() => loggedIn ? <DashBoard /> : <Redirect to='/signin' />} />
             <Route path="/dashboard/:userId" component={EditUser} exact />
 
             <Route path="/signup" exact render={() => !loggedIn ? <SignUp logg={() => this.logOrNot()} /> :

@@ -71,7 +71,7 @@ class EditUser extends Component {
             </tbody>
           </Table>
           <Card.Body>
-            <Button variant="outline-primary" onClick={() => this.props.history.push('/dashboard')}>Go Back</Button>
+            <Button variant="outline-primary" onClick={() => this.props.history.push('/')}>Go Back</Button>
             <Button variant="outline-primary" style={{ margin: "0 20px" }} onClick={() => this.showEditInputs(usr)}>
               {!edit ? "Edit Data" : "Cancel "}</Button>
             <Button variant="outline-success" onClick={() => this.saveChanges(usr.id)} disabled={!edit}>Save Changes</Button>

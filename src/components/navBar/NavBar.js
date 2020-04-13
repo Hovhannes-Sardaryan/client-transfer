@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, Button, NavLink } from 'react-bootstrap'
+import { Navbar, Nav, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import rf from '../../common/images/rf.png'
 
@@ -8,11 +8,11 @@ export default class NavBar extends Component {
     return (
       <Navbar bg="dark" variant="dark">
         <div className="container">
-          <NavLink className="navbar-brand" to="/dashboard">
+          <Link className="navbar-brand nav-link" to="/">
             <img className="brandLogo" src={rf} alt="To dashboard" />
-          </NavLink>
+          </Link>
           <Nav className="mr-auto">
-            {this.props.logged && <Link to="/dashboard" className="nav-link">DashBoard</Link>}
+            {this.props.logged && <Link to="/" className="nav-link">DashBoard</Link>}
             {this.props.logged && <Link to="/add-client" className="nav-link">Add Client</Link>}
             {!this.props.logged && <Link to="/signin" className="nav-link right">Sign In</Link>}
           </Nav>

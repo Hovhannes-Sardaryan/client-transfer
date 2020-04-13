@@ -43,7 +43,7 @@ class SignUp extends Component {
           .required("Surename is required")
           .min(2, "Too short - should be 2 chars minimum."),
         email: Yup.string()
-          .email()  // .label("Email").email()
+          .email()
           .required("Required"),
         password: Yup.string()
           .required("No password provided.")

@@ -52,7 +52,7 @@ class AddClient extends Component {
             <FormControl name="contact" value={contact} onChange={this.handleChange} placeholder="enter contact" />
           </Form.Row>
           {name && contact && lastName ?
-            <Link to="/dashboard" className="addClientLink" onClick={(e) => this.addUser(e)}> Add Client</Link>
+            <Link to="/" className="addClientLink" onClick={(e) => this.addUser(e)}> Add Client</Link>
             :
             <OverlayTrigger
               overlay={<Tooltip id="tooltip-disabled">Write required options for add client!</Tooltip>}>
