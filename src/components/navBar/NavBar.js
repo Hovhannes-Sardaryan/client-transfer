@@ -9,10 +9,9 @@ export default class NavBar extends Component {
       <Navbar bg="dark" variant="dark">
         <div className="container">
           <NavLink className="navbar-brand" to="/dashboard">
-            <img className="brandLogo" src={rf} alt="" />
+            <img className="brandLogo" src={rf} alt="To dashboard" />
           </NavLink>
           <Nav className="mr-auto">
-            {/* <Link to="/" className="nav-link">Home</Link> */}
             {this.props.logged && <Link to="/dashboard" className="nav-link">DashBoard</Link>}
             {this.props.logged && <Link to="/add-client" className="nav-link">Add Client</Link>}
             {!this.props.logged && <Link to="/signin" className="nav-link right">Sign In</Link>}
