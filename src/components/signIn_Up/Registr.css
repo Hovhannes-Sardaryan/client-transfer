@@ -1,0 +1,38 @@
+.linkP{
+  float: left;
+  color: #007bff;
+  cursor: pointer;
+}
+.linkP:hover{
+  text-decoration: underline;
+  color: #0056b3;
+}
+.myFormControl{
+  padding: 1.4rem .735rem;
+}
+/* .myFormControl:focus{
+  box-shadow: none;
+  border: 1px solid #ced4da
+} */
+.registr-inputs{
+  padding-top: 90px;
+}
+.RegisterCheckStyle{
+  padding-left: 14px; 
+  cursor: pointer;
+}
+.eyeIconStile{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1
+}
+
+input.error {
+  border-color: red;
+}
+.input-feedback {
+  color: #eb3636;
+  margin-top: 5px;
+  font-size: 14px;
+}

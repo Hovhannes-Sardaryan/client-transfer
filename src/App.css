@@ -1,0 +1,18 @@
+.App {
+  min-height: 100vh;
+  text-align: center;
+  background-color: whitesmoke;
+  box-shadow: 0 0 20px 2px #99a1a8d6 inset;
+}
+
+button:focus{
+  border: none;
+}
+.Home{
+  color: #102133bd;
+}
+.brandLogo{
+  width: 69px;
+  border-radius: 3px;
+  margin: -17px 0px -11px 0px;
+}

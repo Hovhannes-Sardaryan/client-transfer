@@ -1,0 +1,63 @@
+.dashboardStyle{
+  margin: 0px auto;
+  width: 70%;
+  border: none
+}
+.dashboardStyle>div{
+  margin: 40px auto;
+}
+.dashboard-icon-items{
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-left: -35px;
+}
+.editIcon{
+  margin-right: 8px;
+}
+.infoA{
+  text-align: right;
+  border-right: 1px solid #1f212440;
+  width: 33%;
+}
+.infoB{
+  text-align: left;
+}
+.editInput{ 
+  border: none;
+  background-color: #e2ffdc;
+  padding: 4px;
+  margin: 0;
+  width: 60%;
+}
+
+.addClientForm{
+  max-width: 600px;
+  margin: 70px auto;
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-row: auto;
+  grid-gap: 8px
+}
+.addClientTitle{
+  background-color: darkgray;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.addClientLabel{
+  margin: 5px;
+}
+.addClientLink{
+  color: white;
+    width: 100%;
+    background-color: teal;
+    border-radius: 3px;
+    padding: 9px;
+    transition-duration: 0.2s;
+}
+.addClientLink:hover{
+  color: wheat;
+  text-decoration: none;
+  background-color: darkslategray;
+}
